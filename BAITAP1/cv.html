@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    <style>
+        .box-left {
+            width: 30%;
+            background: lightcyan;
+            float: left;
+            height: auto;
+        }
+
+        .box-right {
+            width: 70%;
+            background: white;
+            float: right;
+            height: auto;
+        }
+        
+        .box-avatar {
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .avatar {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px blue solid;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .title-left {
+            padding-left: 40px;
+        }
+        
+        .title-right {
+            margin-top: 10px;
+        }
+
+        .info-left {
+            padding-left: 40px;
+            margin-bottom: -20px;
+            color: blue;
+        }
+
+        .info-right {
+            text-align: right;
+            margin-right: 70px;
+            margin-bottom: -20px;
+        }
+
+        .icon {
+            width: 26px;
+            height: 26px;
+            border: 2px black solid;
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 3px;
+            margin-bottom: -30px;
+        }
+        
+        .line-left {
+            width: 70%; 
+            margin-bottom: 30px;
+            margin-left: 35px;
+        }
+
+        .line-right {
+            width: 90%; 
+            margin-bottom: 30px;
+            margin-left: 35px;
+        }
+
+        .box-item-left-content {
+            padding-left: 50px;
+            padding-bottom: 10px;
+        }
+
+        .box-item-right {
+            margin-left: 30px;
+        }
+
+        .contact {
+            color: cornflowerblue;
+        }
+
+        .contact-icon {
+            width: 15px;
+            height: 15px;
+            margin-left: -40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box-left">
+        <div class="box-avatar">
+            <img class="avatar" src="./img/avatar.jpg" alt="Avatar">
+        </div>
+
+        <!-- Su dung: border / width / height / padding -->
+        <div class="box-item-left">
+            <!-- Muc tieu nghe nghiep -->
+            <div class="title-left">
+                <h3 class="info-left">Mục tiêu nghề nghiệp</h3>
+                <img class="icon" src="./img/news.png" alt="Job">
+                <hr class="line-left"/>
+            </div>
+
+            <div class="box-item-left-content">
+                <p>Thất nghiệp</p>
+            </div>
+
+            <!-- Ki nang -->
+            <div class="title-left">
+                <h3 class="info-left">Kĩ năng</h3>
+                <img class="icon" src="./img/skills.png" alt="Skill">
+                <hr class="line-left"/>
+            </div>
+
+            <div class="box-item-left-content">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ol>
+            </div>
+
+            <!-- Uu / khuyet diem -->
+            <div class="title-left">
+                <h3 class="info-left">Kĩ năng</h3>
+                <img class="icon" src="./img/medal.png" alt="Strong point">
+                <hr class="line-left"/>
+            </div>
+
+            <div class="box-item-left-content">
+                <div style="width: 50%; float: left;">
+                    <p>Ưu điểm</p>
+                    <ul>
+                        <li>Không ngại khó</li>
+                        <li>Nhiệt tình</li>
+                        <li>Nhanh nhẹn</li>
+                        <li>Trách nhiệm</li>
+                        <li>Luôn sáng tạo</li>
+                    </ul>
+                </div>
+                <div style="width: 50%; float: right;">
+                    <p>Khuyết điểm</p>
+                    <ul>
+                        <li>Ngại giao tiếp</li>
+                        <li>Ít nói</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-right">
+        <div class="box-item-right">
+            <h2 style="color: blue; margin-bottom: -20px;">Minh</h2>
+            <h3 style="margin-bottom: 5px;">Sinh viên</h3>
+            <div class="contact">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <img class="contact-icon" src="./img/phone.png" alt="Phone">
+                        <span>123</span>
+                    </li>
+                    <li>
+                        <img class="contact-icon" src="./img/mail.png" alt="Mail">
+                        <span>123</span>
+                    </li>
+                    <li>
+                        <img class="contact-icon" src="./img/address.png" alt="Address">
+                        <span>123</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hoc van -->
+            <div class="title-right">
+                <h3 class="info-right">Học vấn</h3>
+                <img class="icon" src="./img/news.png" alt="Degree">
+                <hr class="line-right"/>
+            </div>
+
+            <div class="box-item-right-content">
+                <ul>
+                    <li>
+                        <p>2014-2016<span style="margin-left: 100px;">Home</span></p>
+                    </li>
+                    <li>
+                        <p>2017-2020<span style="margin-left: 100px;">Alone</span></p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Kinh nghiem -->
+            <div class="title-right">
+                <h3 class="info-right">Kinh nghiệm</h3>
+                <img class="icon" src="./img/news.png" alt="Experience">
+                <hr class="line-right"/>
+            </div>
+
+            <div class="box-item-right-content">
+                <ul>
+                    <li>
+                        <p>2014-2016<span style="margin-left: 100px;">Home</span></p>
+                    </li>
+                    <li>
+                        <p>2017-2020<span style="margin-left: 100px;">Alone</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
