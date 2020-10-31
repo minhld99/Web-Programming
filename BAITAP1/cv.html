@@ -58,6 +58,7 @@
             text-align: right;
             margin-right: 70px;
             margin-bottom: -20px;
+            color: blue;
         }
 
         .icon {
@@ -110,6 +111,7 @@
             width: 15px;
             height: 15px;
             margin-left: -40px;
+            margin-right: 26px;
         }
 
         .li-wrap {
@@ -125,6 +127,14 @@
             width: 70%;
             margin-top: -18px;
             margin-bottom: 30px;
+        }
+        
+        .dashed { list-style-type: none; }
+        .dashed > li { text-indent: 15px;}
+        .dashed > li:before {
+            content: "- ";
+            position: absolute;
+            margin-left: -45px; 
         }
 
     </style>
@@ -156,7 +166,7 @@
             </div>
 
             <div class="box-item-left-content">
-                <ul>
+                <ul class="dashed">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quam magni soluta similique placeat ipsa dignissimos obcaecati doloremque! Dicta id fuga, dolore nam nesciunt reiciendis repellendus ad blanditiis dolorum vero!   </li>
@@ -165,7 +175,7 @@
 
             <!-- Uu / khuyet diem -->
             <div class="title-left">
-                <h3 class="info-left">Kĩ năng</h3>
+                <h3 class="info-left">Ưu điểm - Khuyết điểm</h3>
                 <img class="icon" src="./img/medal.png" alt="Strong point">
                 <hr class="line-left"/>
             </div>
@@ -173,7 +183,7 @@
             <div class="box-item-left-content">
                 <div style="width: 50%; float: left;">
                     <p>Ưu điểm</p>
-                    <ul>
+                    <ul class="dashed">
                         <li>Không ngại khó</li>
                         <li>Nhiệt tình</li>
                         <li>Nhanh nhẹn</li>
@@ -183,7 +193,7 @@
                 </div>
                 <div style="width: 50%; float: right;">
                     <p>Khuyết điểm</p>
-                    <ul>
+                    <ul class="dashed">
                         <li>Ngại giao tiếp</li>
                         <li>Ít nói</li>
                     </ul>
@@ -227,7 +237,7 @@
                         <p>Home</p>
                     </li>
                     <li class="li-wrap">
-                        <p class="date">2017-2020</p>
+                        <p class="date">2016 - 2018</p>
                         <p>Alone</p>
                     </li>
                 </ul>
@@ -243,11 +253,11 @@
             <div class="box-item-right-content">
                 <ul>
                     <li class="li-wrap">
-                        <div class="date">2014 - 2016</div>
+                        <div class="date">4/2017 - 5/2018</div>
                         <div class="exp">
                             <p class="exp-title">Facebook.com</p>
                             <p class="exp-job">Telesale</p>
-                            <ul class="exp-detail">
+                            <ul class="dashed">
                                 <li>1</li>
                                 <li>2</li>
                                 <li>3</li>
@@ -258,11 +268,11 @@
                     </li>
 
                     <li class="li-wrap">
-                        <div class="date">2014 - 2016</div>
+                        <div class="date">5/2018 - 12/2018</div>
                         <div class="exp">
                             <p class="exp-title">Google.com</p>
                             <p class="exp-job">Developer</p>
-                            <ul class="exp-detail">
+                            <ul class="dashed">
                                 <li>1</li>
                                 <li>2</li>
                                 <li>3</li>
@@ -273,11 +283,11 @@
                     </li>
 
                     <li class="li-wrap">
-                        <div class="date">2014 - 2016</div>
+                        <div class="date">1/2018 - Đến nay</div>
                         <div class="exp">
                             <p class="exp-title">Silicon Valley</p>
                             <p class="exp-job">CEO</p>
-                            <ul class="exp-detail">
+                            <ul class="dashed">
                                 <li>1</li>
                                 <li>2</li>
                                 <li>3</li>
