@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-
     <style>
+        .box {
+            display: flex;
+        }
+
         .box-left {
             width: 30%;
             background: lightcyan;
             float: left;
-            height: auto;
+            /* height: auto; */
+            /* flex: 30%; */
         }
 
         .box-right {
             width: 70%;
-            background: white;
+            background: lightyellow;
             float: right;
-            height: auto;
+            /* height: auto; */
+            /* flex: 70%; */
         }
         
         .box-avatar {
@@ -86,6 +91,17 @@
             margin-left: 30px;
         }
 
+        .name {
+            font-size: 35px;
+            color: blue;
+            margin-bottom: -20px;
+        }
+
+        .job {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
         .contact {
             color: cornflowerblue;
         }
@@ -96,9 +112,24 @@
             margin-left: -40px;
         }
 
+        .li-wrap {
+            display: flex;
+        }
+
+        .date {
+            width: 30%;
+            display: list-item;
+        }
+
+        .exp {
+            width: 70%;
+            margin-top: -18px;
+            margin-bottom: 30px;
+        }
+
     </style>
 </head>
-<body>
+<body class="box">
     <div class="box-left">
         <div class="box-avatar">
             <img class="avatar" src="./img/avatar.jpg" alt="Avatar">
@@ -114,7 +145,7 @@
             </div>
 
             <div class="box-item-left-content">
-                <p>Thất nghiệp</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ipsa obcaecati voluptatum necessitatibus aut laboriosam accusantium repellat? Harum corporis, ut mollitia reiciendis culpa, eveniet vel voluptatem corrupti omnis eius obcaecati!</p>
             </div>
 
             <!-- Ki nang -->
@@ -128,6 +159,7 @@
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quam magni soluta similique placeat ipsa dignissimos obcaecati doloremque! Dicta id fuga, dolore nam nesciunt reiciendis repellendus ad blanditiis dolorum vero!   </li>
                 </ol>
             </div>
 
@@ -162,21 +194,21 @@
 
     <div class="box-right">
         <div class="box-item-right">
-            <h2 style="color: blue; margin-bottom: -20px;">Minh</h2>
-            <h3 style="margin-bottom: 5px;">Sinh viên</h3>
+            <h2 class="name">Lương Đức Minh - 20176821</h2>
+            <h3 class="job">Sinh viên</h3>
             <div class="contact">
                 <ul style="list-style-type: none;">
                     <li>
                         <img class="contact-icon" src="./img/phone.png" alt="Phone">
-                        <span>123</span>
+                        <span>123456789</span>
                     </li>
                     <li>
                         <img class="contact-icon" src="./img/mail.png" alt="Mail">
-                        <span>123</span>
+                        <span>mail_fake@gmail.com</span>
                     </li>
                     <li>
                         <img class="contact-icon" src="./img/address.png" alt="Address">
-                        <span>123</span>
+                        <span>Hanoi, Vietnam</span>
                     </li>
                 </ul>
             </div>
@@ -190,11 +222,13 @@
 
             <div class="box-item-right-content">
                 <ul>
-                    <li>
-                        <p>2014-2016<span style="margin-left: 100px;">Home</span></p>
+                    <li class="li-wrap">
+                        <p class="date">2014 - 2016</p>
+                        <p>Home</p>
                     </li>
-                    <li>
-                        <p>2017-2020<span style="margin-left: 100px;">Alone</span></p>
+                    <li class="li-wrap">
+                        <p class="date">2017-2020</p>
+                        <p>Alone</p>
                     </li>
                 </ul>
             </div>
@@ -208,11 +242,49 @@
 
             <div class="box-item-right-content">
                 <ul>
-                    <li>
-                        <p>2014-2016<span style="margin-left: 100px;">Home</span></p>
+                    <li class="li-wrap">
+                        <div class="date">2014 - 2016</div>
+                        <div class="exp">
+                            <p class="exp-title">Facebook.com</p>
+                            <p class="exp-job">Nhan vien bep</p>
+                            <ul class="exp-detail">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                        <p>2017-2020<span style="margin-left: 100px;">Alone</span></p>
+
+                    <li class="li-wrap">
+                        <div class="date">2014 - 2016</div>
+                        <div class="exp">
+                            <p class="exp-title">Google.com</p>
+                            <p class="exp-job">Developer</p>
+                            <ul class="exp-detail">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="li-wrap">
+                        <div class="date">2014 - 2016</div>
+                        <div class="exp">
+                            <p class="exp-title">Silicon Valley</p>
+                            <p class="exp-job">CEO</p>
+                            <ul class="exp-detail">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
